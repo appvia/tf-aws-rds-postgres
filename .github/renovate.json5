@@ -1,0 +1,21 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "dependencyDashboard": false,
+  "automerge": false,
+  "pinDigests": true,
+  "separateMajorMinor": true,
+  "separateMinorPatch": true,
+  "separateMultipleMajor": true,
+  "regexManagers": [
+    {
+      "fileMatch": ["^terraform\.tfvars\.json$"],
+      "matchStrings": [
+        "\\s*\"policy_checker_version\":\\s*\"(?<currentValue>.*)\"\\s,
+      ],
+      "datasourceTemplate": "github-tags",
+      "depNameTemplate": "policy",
+      "lookupNameTemplate": "appvia/policy",
+      "versioningTemplate": "semver"
+    }
+  ]
+}
