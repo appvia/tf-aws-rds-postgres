@@ -1,0 +1,5 @@
+{
+    "source": "https://github.com/appvia/policy",
+    "version": "1.0.0",
+    "config": "infra/generic/config.yaml"
+}
