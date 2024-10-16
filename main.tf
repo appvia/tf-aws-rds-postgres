@@ -70,7 +70,7 @@ resource "aws_kms_key" "rds_postgres_key" {
 
 module "rds_postgres_db" {
   source  = "terraform-aws-modules/rds/aws"
-  version = "4.2.0"
+  version = "6.10.0"
 
   identifier = var.identifier
 
